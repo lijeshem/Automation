@@ -40,6 +40,7 @@ public class LoginPage {
 		return elementutil.doIsDisplayed(forgotPasswordLink);
 	}
 	
+	@Step("Checking whether Register link exist or not...")
 	public boolean isRegisterLinkExist() {
 		return elementutil.doIsDisplayed(registerLink);
 	}
