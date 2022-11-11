@@ -53,7 +53,7 @@ public class MyAccountPageTest extends BaseTest {
 	}
 	
 	@DataProvider
-	public Object [][] productSelectDara() {
+	public Object [][] productSelectData() {
 		return new Object[][] {
 			{"MacBook", "MacBook Pro"},
 			{"iMac", "iMac"},
@@ -61,7 +61,7 @@ public class MyAccountPageTest extends BaseTest {
 		};
 	}
 	
-	@Test (priority=6, dataProvider = "productSelectDara")
+	@Test (priority=5, dataProvider = "productSelectData")
 	public void selectProductTest(String productName, String mainProductName) {
 		searchrespage = accountpage.doSearch(productName);
 		productInfoPage = searchrespage.selectProduct(mainProductName);
